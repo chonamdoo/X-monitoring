@@ -1,38 +1,70 @@
 <!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>2026-10-02 · X Bookmark Archive</title><meta name="description" content="2026-10-02 X 북마크 한국어 요약"><link rel="stylesheet" href="../../../assets/style.css"></head>
-<body><main class="wrap"><header class="hero"><a class="back" href="../../../index.html">← 전체 아카이브</a><div class="eyebrow">Daily archive</div><h1>2026-10-02</h1><p class="lede">이날 새로 감지된 X 북마크 8건을 한국어로 정리했습니다.</p></header><section class="cards"><article class="card">
-<div class="card-head"><div><div class="author">Oskar</div><div class="handle">@o_kwasniewski</div></div><span class="tag">⌘ 개발/코딩</span></div>
-<p class="summary">작성자는 웹·모바일 등 다양한 앱을 위한 오픈소스 E2E 테스트 프레임워크를 소개한다. 결정론적 API와 에이전트 기반 API를 함께 사용하고, 자체 에이전트·인프라를 연결해 로컬이나 CI에서 실행할 수 있다고 설명한다.</p>
-<ul class="points"><li>npx e2e init 명령으로 초기화</li><li>결정론적 테스트와 에이전트 기반 테스트의 혼합 지원</li><li>웹·모바일 등 여러 플랫폼을 대상으로 설계</li><li>로컬 및 CI 실행과 자체 인프라 연동 지원</li></ul>
-<div class="media-grid media-count-1"><figure class="media-item media-photo"><img loading="lazy" decoding="async" src="https://pbs.twimg.com/media/HTjbJPEWQAEBJmV.jpg" alt="X 게시물 이미지"></figure></div>
-<div class="meta">북마크 감지 2026.10.02 08:33 KST · 게시 2026.10.02 00:04 KST</div>
-<a class="open" href="https://x.com/o_kwasniewski/status/2105675143464763540" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
-<details><summary>원문 텍스트 보기</summary><p class="original">Introducing e2e<br><br>The agentic testing framework for any app<br><br>~/ npx e2e init<br><br>→ Fully Open Source<br>→ Mix deterministic and agentic APIs<br>→ Supports web, mobile, and more<br>→ Bring your own agent and infrastructure<br>→ Run locally or in CI<br><br>https://t.co/G3XB2L8tiC https://t.co/gUZ3AII2fY</p></details>
-</article><article class="card">
-<div class="card-head"><div><div class="author">NO1ennn</div><div class="handle">@N01ennn</div></div><span class="tag">◈ AI/에이전트</span></div>
-<p class="summary">작성자는 검색 결과를 Jev로 평가하고 에이전트가 답변을 작성·검증하는 RAG 구조를 제안한다. 관련성, 답변 가능성, 프롬프트 인젝션을 선별하고 근거가 없으면 답변 생성을 중단해 환각을 줄일 수 있다고 주장한다.</p>
-<ul class="points"><li>밀집 검색과 키워드 검색으로 후보 문서 20개를 수집</li><li>Jev가 관련성 점수와 답변 가능성·인젝션 여부를 함께 평가</li><li>기준 점수 0.6을 넘은 문서만 작성 에이전트에 전달</li><li>작성된 주장을 출처와 대조하고 근거가 없으면 재검색 후 답변을 거부</li></ul>
-<div class="media-grid media-count-1"><figure class="media-item"><video class="media-player media-video" controls preload="metadata" playsinline poster="https://pbs.twimg.com/amplify_video_thumb/2105605955731771392/img/D--Tgx7TxI1dviAf.jpg"><source src="https://video.twimg.com/amplify_video/2105605955731771392/vid/avc1/972x1026/VhTHvbmmP8Lw-I9D.mp4" type="video/mp4">이 브라우저에서는 영상을 재생할 수 없습니다.</video></figure></div>
-<div class="meta">북마크 감지 2026.10.02 08:33 KST · 게시 2026.10.01 19:29 KST</div>
-<a class="open" href="https://x.com/N01ennn/status/2105606036639932433" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
-<details><summary>원문 텍스트 보기</summary><p class="original">this is pure f*cking treasure<br><br>A Stanford AI research group finally drew the perfect RAG system: retrieval, Jev and agents in one loop, and it fixes the 3 things that break every RAG app:<br><br>&gt; the LLM reads 20 passages when only 3 matter<br>&gt; it answers questions your docs can&#x27;t answer<br>&gt; it trusts whatever text it retrieves<br><br>here&#x27;s how it runs:<br><br>&gt; a lead agent sends the query<br>&gt; hybrid search pulls the top 20 candidates, dense + keyword<br>&gt; ONE Jev request scores all 20 + 2 gates: answerable? injection?<br>&gt; only passages above 0.6 reach the writer agent<br>&gt; a second Jev call checks every claim against its source<br>&gt; grounded answer, with citations<br><br>and when the docs don&#x27;t have it:<br><br>&gt; answerable fails, the writer never runs<br>&gt; a researcher agent rewrites the query and retries once<br>&gt; still nothing? &quot;not in the docs&quot;. zero tokens spent on a guess<br><br>retrieval casts the net. Jev decides what&#x27;s real. agents do the work<br><br>save this before you build your next RAG</p></details>
-</article><article class="card">
-<div class="card-head"><div><div class="author">りも(Limo)</div><div class="handle">@vibe_walking</div></div><span class="tag">◈ AI/에이전트</span></div>
-<p class="summary">작성자는 Cloudflare가 Hugging Face에 공개한 270억 매개변수 멀티모달 의사결정 모델 Clef를 Jev의 대안으로 소개한다. Clef는 상태와 선택지가 정해진 질문을 받아 각 선택지의 확률을 반환하므로 자유 형식 출력을 별도로 파싱할 필요가 없다고 설명한다.</p>
-<ul class="points"><li>텍스트·JSON·이미지·동영상 형태의 상태 입력 지원</li><li>여러 질문의 허용된 선택지별 확률을 한 번의 순전파로 반환</li><li>자유 형식 문장을 생성하지 않는 구조</li><li>작성자는 Jev 및 SystemOne API와 완전히 호환된다고 주장</li></ul>
+<body><main class="wrap"><header class="hero"><a class="back" href="../../../index.html">← 전체 아카이브</a><div class="eyebrow">Daily archive</div><h1>2026-10-02</h1><p class="lede">이날 새로 감지된 X 북마크 16건을 한국어로 정리했습니다.</p></header><section class="cards"><article class="card">
+<div class="card-head"><div><div class="author">Victor M</div><div class="handle">@victormustar</div></div><span class="tag">◈ AI/에이전트</span></div>
+<p class="summary">작성자는 Perplexity가 Hugging Face에 ‘Jev’의 대안이 되는 프로젝트를 공개했다고 전한다. 게시물에는 구체적인 기능이나 비교 근거가 없어 실제 성격과 완성도는 링크의 원문을 별도로 확인해야 한다.</p>
+<ul class="points"><li>Perplexity가 공개했다는 Hugging Face 프로젝트 소개</li><li>‘Jev 대안’이라는 작성자의 평가</li><li>기능·라이선스·성능에 관한 설명은 없음</li></ul>
 
-<div class="meta">북마크 감지 2026.10.02 08:33 KST · 게시 2026.10.02 04:15 KST</div>
-<a class="open" href="https://x.com/vibe_walking/status/2105738417237803418" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
-<details><summary>원문 텍스트 보기</summary><p class="original">CloudflareがJevの代替をHugging Faceにアップロードしてる！！<br>オープンソースだから好きなだけ使える！<br><br>https://t.co/P6fKf5q9lF<br><br>Clefは、状態（state）と「型付きの質問（typed questions）」のスキーマを入力として受け取り、意思決定を行う27B（270億パラメータ）のマルチモーダルモデルです。<br><br>状態は、テキスト、JSON、画像、動画として読み取ることができます。そして、各質問について「許可されているすべての選択肢」の確率を、1回のフォワードパスでまとめて返します。<br><br>自由形式の文章生成は行わず、出力を後からパース（解析・変換）する必要もありません。<br><br>Clef APIは、JevおよびSystemOneと完全な互換性があります。</p></details>
+<div class="meta">북마크 감지 2026.10.02 08:44 KST · 게시 2026.10.02 05:05 KST</div>
+<a class="open" href="https://x.com/victormustar/status/2105751030390542808" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
+<details><summary>원문 텍스트 보기</summary><p class="original">Alert (again): Perplexity also just dropped a Jev alternative on Hugging Face 🚨<br><br>https://t.co/41UCCnKQkL</p></details>
 </article><article class="card">
-<div class="card-head"><div><div class="author">liam.</div><div class="handle">@liambraus</div></div><span class="tag">· 기타</span></div>
-<p class="summary">작성자는 Microsoft 제품을 무료로 활성화한다는 비공식 GitHub 저장소 ‘Microsoft Activation Scripts’를 소개한다. 별도 라이선스 없이 Windows나 Office를 활성화하는 행위는 이용약관 위반이나 소프트웨어 불법 사용에 해당할 수 있으므로 정식 라이선스 사용이 필요하다.</p>
-<ul class="points"><li>작성자는 Windows 7·8·10·11 활성화를 지원한다고 주장</li><li>저장소의 GitHub 스타가 17만 8천 개 이상이라고 주장</li><li>Microsoft 소유의 GitHub에서 계속 공개 중이라는 점을 강조</li><li>비공식 활성화 도구는 법적·보안상 위험이 있을 수 있음</li></ul>
-<div class="media-grid media-count-1"><figure class="media-item media-photo"><img loading="lazy" decoding="async" src="https://pbs.twimg.com/media/HTjF2ShXgAABL23.jpg" alt="X 게시물 이미지"></figure></div>
-<div class="meta">북마크 감지 2026.10.02 08:33 KST · 게시 2026.10.01 22:26 KST</div>
-<a class="open" href="https://x.com/liambraus/status/2105650623974621300" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
-<details><summary>원문 텍스트 보기</summary><p class="original">ESTO ES JODIDAMENTE INCREÍBLE<br><br>hay un repo de GitHub que activa Windows gratis.<br><br>tiene más de 178.000 estrellas.<br><br>se llama Microsoft Activation Scripts.<br><br>activa Windows 7, 8, 10 y 11.<br><br>mientras Microsoft cobra:<br><br>→ Windows 11 Pro: 199,99$<br>→ Windows 11 Home: 139$<br>→ Office Home &amp; Business 2024: 249,99$<br>→ Microsoft 365 Family: 129,99$/año<br>→ Microsoft 365 Personal: 99,99$/año<br><br>ese repo cuesta: 0$.<br><br>la parte más absurda:<br><br>está alojado en GitHub.<br><br>GitHub pertenece a Microsoft.<br><br>activa productos de Microsoft.<br><br>y sigue online.<br><br>os dejo el repo abajo.</p></details>
+<div class="card-head"><div><div class="author">maria</div><div class="handle">@mariagpts</div></div><span class="tag">◈ AI/에이전트</span></div>
+<p class="summary">Claude를 활용해 Polymarket용 봇을 만드는 과정을 단계별로 설명하는 자료를 소개한다. 예측시장 데이터 처리와 자동화 방식을 학습하는 데 참고할 수 있지만, 거래 위험과 플랫폼 정책 준수 여부는 별도로 검토해야 한다.</p>
+<ul class="points"><li>Claude 기반 Polymarket 봇 제작 가이드</li><li>단계별 설명을 강조한 학습 자료</li><li>자동 거래 시 재정적 위험과 정책 검토 필요</li></ul>
+<div class="media-grid media-count-1"><figure class="media-item"><video class="media-player media-video" controls preload="metadata" playsinline poster="https://pbs.twimg.com/amplify_video_thumb/2103096354600062976/img/9CXTkKGyecBw-5nY.jpg"><source src="https://video.twimg.com/amplify_video/2103096354600062976/vid/avc1/1280x720/jCSlCdSfsC83VWii.mp4" type="video/mp4">이 브라우저에서는 영상을 재생할 수 없습니다.</video></figure></div>
+<div class="meta">북마크 감지 2026.10.02 08:44 KST · 게시 2026.10.01 22:28 KST</div>
+<a class="open" href="https://x.com/mariagpts/status/2105650990414184912" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
+<details><summary>원문 텍스트 보기</summary><p class="original">NADIE LO EXPLICA PASO A PASO COMO AQUÍ.<br><br>Cómo construir un bot de Polymarket con Claude. https://t.co/bXt3G31DBK</p></details>
+</article><article class="card">
+<div class="card-head"><div><div class="author">AI_Explorer</div><div class="handle">@ai_explorer25</div></div><span class="tag">◎ 리서치/학습</span></div>
+<p class="summary">Anthropic, Google, Meta, NVIDIA, Microsoft, OpenAI, IBM, AWS, Hugging Face 등에서 제공하는 무료 AI 학습 자료를 모아 소개한다. 여러 기업의 공식 교육 콘텐츠를 비교하며 AI 기초와 플랫폼별 기술을 학습할 때 출발점으로 활용할 수 있다.</p>
+<ul class="points"><li>주요 AI·클라우드 기업의 학습 자료 모음</li><li>무료로 이용할 수 있다고 작성자가 소개</li><li>기업별 모델·도구·클라우드 교육 탐색에 유용</li><li>각 링크의 실제 무료 범위와 최신성은 별도 확인 필요</li></ul>
+<div class="media-grid media-count-1"><figure class="media-item media-photo"><img loading="lazy" decoding="async" src="https://pbs.twimg.com/media/HTdOOiTbUAApsXL.jpg" alt="X 게시물 이미지"></figure></div>
+<div class="meta">북마크 감지 2026.10.02 08:44 KST · 게시 2026.09.30 22:31 KST</div>
+<a class="open" href="https://x.com/ai_explorer25/status/2105289309624406178" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
+<details><summary>원문 텍스트 보기</summary><p class="original">Learn AI for free directly from top companies.<br><br>1 - Anthropic:  <br>https://t.co/cc4SxBn4S7<br><br>2 - Google:  <br>https://t.co/r1bv5XfHsN<br><br>3 - Meta:  <br>https://t.co/UALdoellxL<br><br>4 - NVIDIA:  <br>https://t.co/JKTgY3mtf0<br><br>5 - Microsoft:  <br>https://t.co/izcZcNQ9NN<br><br>6 - OpenAI:  <br>https://t.co/nY93DIwg3G<br><br>7 - IBM:  <br>https://t.co/lIYoazapqo<br><br>8 - AWS:  <br>https://t.co/770qBjw9po<br><br>9 - https://t.co/4UrenSfxVZ:  <br>https://t.co/SnPZ287LiW<br><br>10 - Hugging Face:  <br>https://t.co/AAym51yGo9<br><br>follow me if you find this helpful.</p></details>
+</article><article class="card">
+<div class="card-head"><div><div class="author">旺旺</div><div class="handle">@TiagerBao</div></div><span class="tag">✦ 디자인/콘텐츠</span></div>
+<p class="summary">작성자는 ‘motion-video-kit’을 Claude Code로 상업용 영상을 제작하는 전체 과정을 구조화한 스킬로 소개한다. 레퍼런스 분석, 결정론적 애니메이션, 독립 비평 에이전트의 반복 검수, 제작 기록 보존을 결합해 영상 생성의 재현성과 품질 관리를 높이려는 접근이다.</p>
+<ul class="points"><li>28편의 SaaS 론칭 영상을 분석해 동작·스토리보드·3D·오디오 규칙을 정리했다고 주장</li><li>AI 생성 소재와 HTML·GSAP·Three.js 및 코드 기반 타임라인 결합</li><li>제작 에이전트와 별도의 비평 에이전트가 렌더링 결과를 반복 검수</li><li>동일 프레임의 결과를 보장하고 소스·생성 기록·검수 기록까지 납품하는 구조</li></ul>
+
+<div class="meta">북마크 감지 2026.10.02 08:44 KST · 게시 2026.10.01 15:11 KST</div>
+<a class="open" href="https://x.com/TiagerBao/status/2105541066674078011" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
+<details><summary>원문 텍스트 보기</summary><p class="original">Claude Code 现在连商业广告片怎么做，都有人直接打包成 Skill 了。<br><br>项目叫 motion-video-kit。<br><br>它不是让 AI 随便生成几个镜头拼起来，而是给 Claude Code 一套完整的视频制作流程。<br><br>作者拆了 28 支专业 SaaS Launch Film，整理出：<br><br>动效规则、分镜方法、Three.js 3D 模式、音频规范和质量检查。<br><br>制作方式也比较实用：<br><br>AI 生成素材 + HTML/GSAP 动效 + Three.js 3D + 代码控制时间线。<br><br>比较特别的是它做了一套 Gauntlet 审片流程：<br><br>做视频的 Agent 不给自己打分。<br><br>每轮渲染后换一个新的 critic 看成片，列问题 → 修改 → 重新渲染 → 再验证。<br><br>一般跑 3～5 轮。<br><br>它还要求动画必须 deterministic：<br>跳到同一帧，就必须得到同样的画面。<br><br>所以最后交付的不只是 MP4，还包括：<br><br>分镜、源文件、素材生成记录、审片记录和修改结果。<br><br>我觉得这个方向挺有意思。<br><br>以前给 Claude Code 的 Skill，大多是在教它怎么写代码。<br><br>现在开始有人把 导演、动效设计和审片流程 也做成 Skill 了。<br><br>GitHub：https://t.co/XeOXsEIWix <br><br>如果视频制作流程也能被 Skill 化，以后真正拉开差距的会是模型，还是你手里积累的那套制作方法？<br><br>#AI #Agent #ClaudeCode #VideoAI #ThreeJS #AIAgent</p></details>
+</article><article class="card">
+<div class="card-head"><div><div class="author">lumxss</div><div class="handle">@bkdgiffug</div></div><span class="tag">✦ 디자인/콘텐츠</span></div>
+<p class="summary">Hypit은 참고 영상을 분석해 구조와 내용을 분해하고, 텍스트 지시로 인물·장면·문구를 변경할 수 있다고 소개된 오픈소스 영상 에이전트 시스템이다. 짧은 영상의 구성 방식을 연구하거나 하나의 형식을 여러 주제로 변형하는 작업에 활용할 수 있다는 설명이다.</p>
+<ul class="points"><li>참고 영상의 구조와 콘텐츠를 에이전트가 분석</li><li>텍스트로 인물·화면·문구 변경 가능</li><li>여러 AI 에이전트를 연결하는 영상 제작 흐름</li><li>소스 코드가 공개됐다고 작성자가 안내</li></ul>
+<div class="media-grid media-count-1"><figure class="media-item media-photo"><img loading="lazy" decoding="async" src="https://pbs.twimg.com/media/HTdxWega4AAZdIm.png" alt="X 게시물 이미지"></figure></div>
+<div class="meta">북마크 감지 2026.10.02 08:44 KST · 게시 2026.10.02 01:56 KST</div>
+<a class="open" href="https://x.com/bkdgiffug/status/2105703286955241929" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
+<details><summary>원문 텍스트 보기</summary><p class="original">现在用 AI 做视频，连拆解参考视频这一步都能自动化了。<br><br>Hypit 是一个开源的视频 Agent 系统，可以接入不同的 AI Agent 来完成视频制作。<br><br>玩法比较简单：<br><br>① 丢进去一个参考视频，让 Agent 分析<br>② 自动拆解视频的结构和内容<br>③ 想换人物、画面或文案，直接用文字修改<br>④ 整套流程可以继续交给 Agent 自动处理<br>比较适合拿来研究短视频结构，或者快速做不同主题的内容版本。<br>代码已经开源，感兴趣可以去看看。<br>🔗 https://t.co/TUzsT6OpjL</p></details>
+</article><article class="card">
+<div class="card-head"><div><div class="author">0xMarioNawfal</div><div class="handle">@RoundtableSpace</div></div><span class="tag">◈ AI/에이전트</span></div>
+<p class="summary">AI 애플리케이션에 장기 기억 기능을 추가할 때 검토할 수 있는 오픈소스 저장소 다섯 개를 나열한다. Mem0, Letta, Zep, Cognee, Graphiti를 후보군으로 제시하지만, 기능·아키텍처·운영 비용에 대한 비교는 제공하지 않는다.</p>
+<ul class="points"><li>장기 기억 구현용 프로젝트 5개 소개</li><li>Mem0·Letta·Zep·Cognee·Graphiti 포함</li><li>프로젝트별 저장 방식과 검색 구조 비교는 없음</li><li>도입 전 라이선스·확장성·개인정보 처리 방식 검토 필요</li></ul>
+
+<div class="meta">북마크 감지 2026.10.02 08:44 KST · 게시 2026.10.02 07:45 KST</div>
+<a class="open" href="https://x.com/RoundtableSpace/status/2105791115609993702" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
+<details><summary>원문 텍스트 보기</summary><p class="original">5 GITHUB REPOS FOR GIVING AI LONG-TERM MEMORY:<br><br>1. Mem0<br>    https://t.co/xe8eMaWEVT<br>2. Letta<br>    https://t.co/a30XmhXy96<br>3. Zep<br>    https://t.co/WJdk5BWfyx<br>4. Cognee<br>    https://t.co/NBKDFJK6vh<br>5. Graphiti<br>    https://t.co/3hCCQ4Waf4<br><br>SAVE THIS STACK</p></details>
+</article><article class="card">
+<div class="card-head"><div><div class="author">Shruti Codes</div><div class="handle">@Shruti_0810</div></div><span class="tag">⌘ 개발/코딩</span></div>
+<p class="summary">Claude Code의 개발 역량을 확장할 수 있다고 소개하는 스킬 및 에이전트 저장소 10개를 정리한 목록이다. 기획, 구현, 테스트, 보안, 컨텍스트 관리, 외부 서비스 연동, 문서 기반 스킬 생성 등 목적에 따라 필요한 구성요소를 탐색하는 데 유용하다.</p>
+<ul class="points"><li>구조화된 개발 절차와 코딩 습관을 위한 스킬 모음</li><li>React·Next.js 최적화 및 보안 감사용 전문 스킬 포함</li><li>장기 작업의 컨텍스트 관리와 GitHub·Slack·Jira 등 외부 도구 연동 지원 자료 소개</li><li>문서·저장소·PDF를 스킬로 변환하는 도구 포함</li></ul>
+<div class="media-grid media-count-2"><figure class="media-item media-photo"><img loading="lazy" decoding="async" src="https://pbs.twimg.com/media/HTiioIbbEAAIsUk.png" alt="X 게시물 이미지"></figure><figure class="media-item media-photo"><img loading="lazy" decoding="async" src="https://pbs.twimg.com/media/HTii2FnboAA1roV.png" alt="X 게시물 이미지"></figure></div>
+<div class="meta">북마크 감지 2026.10.02 08:44 KST · 게시 2026.10.01 19:53 KST</div>
+<a class="open" href="https://x.com/Shruti_0810/status/2105611988198162618" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
+<details><summary>원문 텍스트 보기</summary><p class="original">10 GITHUB REPOS THAT CAN TAKE CLAUDE CODE TO THE NEXT LEVEL<br><br>Claude Code is already powerful.<br><br>But the right skills can make it much better at coding, debugging, testing, security, automation and real-world workflows.<br><br>1. Superpowers<br>Adds a structured workflow for brainstorming, planning, testing, coding and review.<br>https://t.co/2SZwrKwvCs<br><br>2. Anthropic Skills<br>The official skills collection from Anthropic for coding, documents, testing and more.<br>https://t.co/hz5kldPoUm<br><br>3. Matt Pocock Skills<br>Practical skills focused on better coding habits, testing and avoiding common mistakes.<br>https://t.co/s6gKuhT3Dj<br><br>4. Agents<br>A large collection of specialized agents and skills for debugging, security, documentation and code review.<br>https://t.co/XL7pBqcqHy<br><br>5. Awesome Agent Skills<br>A huge curated collection covering development, security, testing and more.<br>https://t.co/fMtnxU5MRN<br><br>6. Vercel Agent Skills<br>Skills focused on React and Next.js performance, patterns and best practices.<br>https://t.co/9x3SkMYmc7<br><br>7. Trail of Bits Skills<br>Security-focused skills for auditing, static analysis and vulnerability detection.<br>https://t.co/rAVt6ejjNU<br><br>8. Context Mode<br>Helps Claude manage context during long coding sessions and stay focused on relevant information.<br>https://t.co/HJQQE81Zq5<br><br>9. Awesome Claude Skills<br>Connect Claude Code with tools like GitHub, Slack, Linear, Jira and many more.<br>https://t.co/6BHMTf6peN<br><br>10. Skill Seekers<br>Turns documentation, GitHub repos and PDFs into Claude skills automatically.<br>https://t.co/4FCX7LalZP<br><br>The interesting part isn&#x27;t just Claude Code itself.<br><br>It&#x27;s what you can teach it to do.<br><br>Claude + Skills + Context = a much more capable coding agent.<br><br>Save these repos.</p></details>
+</article><article class="card">
+<div class="card-head"><div><div class="author">율무커피 YulmuCoffee</div><div class="handle">@yulmu_coffee</div></div><span class="tag">◈ AI/에이전트</span></div>
+<p class="summary">작성자는 DeepSeek가 모델·도구·스킬·세션·샌드박스·저장소·루프·스케줄링·UI를 교체 가능한 플러그인으로 구성하는 공식 하네스를 공개했다고 전한다. MIT 라이선스와 데스크톱 및 웹 실행 지원이 사실이라면, 에이전트 실행 환경을 목적에 맞게 조립하고 확장하는 기반으로 활용할 수 있다.</p>
+<ul class="points"><li>주요 구성요소를 플러그인으로 교체하는 모듈형 설계</li><li>MIT 라이선스로 공개됐다는 설명</li><li>macOS·Windows 데스크톱 앱 지원 주장</li><li>npx @deepseek-ai/dsh web 명령을 통한 웹 실행 지원 주장</li></ul>
+
+<div class="meta">북마크 감지 2026.10.02 08:44 KST · 게시 2026.10.01 18:58 KST</div>
+<a class="open" href="https://x.com/yulmu_coffee/status/2105598185347666166" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
+<details><summary>원문 텍스트 보기</summary><p class="original">DeepSeek의 공식 하네스가 발표됐습니다! MIT 라이선스로 공개됐으니 마음껏 뜯어보세요.<br><br>아키텍처 변태 연구소 답게, 이번에는 “모든 것이 플러그인” 설계입니다. <br><br>모델, 도구, 스킬, 세션, 샌드박스, 저장소, 루프, 스케줄링, UI까지 플러그인으로 조합하고 교체할 수 있습니다. <br><br>공식 레포는 https://t.co/KhKv2pULfs입니다.<br><br>데스크톱 앱(macOS, Windows)과 npx @deepseek-ai/dsh web 실행을 지원합니다.</p></details>
 </article><article class="card">
 <div class="card-head"><div><div class="author">Robin Ebers</div><div class="handle">@robinebers</div></div><span class="tag">⚙ 도구/워크플로우</span></div>
 <p class="summary">작성자는 빠르게 커진 앱의 구조를 파악하기 위해 Claude에 확대·축소와 이동이 가능한 아키텍처 캔버스를 만들도록 요청했다고 설명한다. 구성 요소의 역할과 연결 관계를 단계 및 그래프로 시각화하면 누적된 구조를 다시 이해하고 문서화하는 데 유용하다고 평가한다.</p>
@@ -42,6 +74,22 @@
 <a class="open" href="https://x.com/robinebers/status/2105309987983745060" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
 <details><summary>원문 텍스트 보기</summary><p class="original">had a crazy idea today<br><br>for the past two months i&#x27;ve been building a pretty massive app<br><br>and truth be told, i often play catch-up on architecture, because features move so damn fast<br><br>so today i asked claude (opus 5.5, high)<br><br>&quot;I have a weird task for you. I want you to look at the app and create, for lack of a better word, a canvas that I can zoom in and zoom out and move around to see how our architecture actually works.&quot;<br><br>(full prompt in first comment)<br><br>this came out pretty great and it truly visualized, with steps and connected graphs what everything does<br><br>10/10 would recommend</p></details>
 </article><article class="card">
+<div class="card-head"><div><div class="author">GitHub AI Projects Community 🇯🇵</div><div class="handle">@trendtech33566</div></div><span class="tag">✦ 디자인/콘텐츠</span></div>
+<p class="summary">작성자는 AI와 화면이나 시스템 사양을 논의할 때 텍스트 대신 시각 자료와 작동 가능한 결과물을 만드는 ‘effective-html’을 소개한다. 와이어프레임, 인터랙티브 프로토타입, 계획도와 시스템 구성도를 독립 실행형 HTML로 만들어 의도를 더 명확히 전달할 수 있다고 설명한다.</p>
+<ul class="points"><li>AI로 시각 자료와 동작하는 시제품을 만드는 6개 스킬 제공</li><li>화면 구성을 와이어프레임으로 표현</li><li>계획과 시스템 아키텍처를 다이어그램으로 시각화</li><li>작성자는 약 3,500개의 GitHub 스타를 받았다고 주장</li></ul>
+
+<div class="meta">북마크 감지 2026.10.02 08:33 KST · 게시 2026.10.01 19:00 KST</div>
+<a class="open" href="https://x.com/trendtech33566/status/2105598675141754916" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
+<details><summary>원문 텍스트 보기</summary><p class="original">AIへの指示、「文章だけ」だと伝わりにくい人へ👀<br><br>effective-html、⭐️約3.5千。AIで図や動く試作品を作る6つのskills。<br><br>何ができるかというと👇<br>・画面構成をワイヤーフレームで可視化<br>・実際に触れるプロトタイプを作成<br>・計画やシステム構成も図にできる<br>・単体で開けるHTMLにまとめる<br><br>「こう作ってほしい」を、見せて伝える。<br>AIと画面設計や仕様を詰めたい人に刺さります。<br><br>https://t.co/PwDJ3t0JmW</p></details>
+</article><article class="card">
+<div class="card-head"><div><div class="author">NO1ennn</div><div class="handle">@N01ennn</div></div><span class="tag">◈ AI/에이전트</span></div>
+<p class="summary">작성자는 검색 결과를 Jev로 평가하고 에이전트가 답변을 작성·검증하는 RAG 구조를 제안한다. 관련성, 답변 가능성, 프롬프트 인젝션을 선별하고 근거가 없으면 답변 생성을 중단해 환각을 줄일 수 있다고 주장한다.</p>
+<ul class="points"><li>밀집 검색과 키워드 검색으로 후보 문서 20개를 수집</li><li>Jev가 관련성 점수와 답변 가능성·인젝션 여부를 함께 평가</li><li>기준 점수 0.6을 넘은 문서만 작성 에이전트에 전달</li><li>작성된 주장을 출처와 대조하고 근거가 없으면 재검색 후 답변을 거부</li></ul>
+<div class="media-grid media-count-1"><figure class="media-item"><video class="media-player media-video" controls preload="metadata" playsinline poster="https://pbs.twimg.com/amplify_video_thumb/2105605955731771392/img/D--Tgx7TxI1dviAf.jpg"><source src="https://video.twimg.com/amplify_video/2105605955731771392/vid/avc1/972x1026/VhTHvbmmP8Lw-I9D.mp4" type="video/mp4">이 브라우저에서는 영상을 재생할 수 없습니다.</video></figure></div>
+<div class="meta">북마크 감지 2026.10.02 08:33 KST · 게시 2026.10.01 19:29 KST</div>
+<a class="open" href="https://x.com/N01ennn/status/2105606036639932433" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
+<details><summary>원문 텍스트 보기</summary><p class="original">this is pure f*cking treasure<br><br>A Stanford AI research group finally drew the perfect RAG system: retrieval, Jev and agents in one loop, and it fixes the 3 things that break every RAG app:<br><br>&gt; the LLM reads 20 passages when only 3 matter<br>&gt; it answers questions your docs can&#x27;t answer<br>&gt; it trusts whatever text it retrieves<br><br>here&#x27;s how it runs:<br><br>&gt; a lead agent sends the query<br>&gt; hybrid search pulls the top 20 candidates, dense + keyword<br>&gt; ONE Jev request scores all 20 + 2 gates: answerable? injection?<br>&gt; only passages above 0.6 reach the writer agent<br>&gt; a second Jev call checks every claim against its source<br>&gt; grounded answer, with citations<br><br>and when the docs don&#x27;t have it:<br><br>&gt; answerable fails, the writer never runs<br>&gt; a researcher agent rewrites the query and retries once<br>&gt; still nothing? &quot;not in the docs&quot;. zero tokens spent on a guess<br><br>retrieval casts the net. Jev decides what&#x27;s real. agents do the work<br><br>save this before you build your next RAG</p></details>
+</article><article class="card">
 <div class="card-head"><div><div class="author">0xMarioNawfal</div><div class="handle">@RoundtableSpace</div></div><span class="tag">◎ 리서치/학습</span></div>
 <p class="summary">작성자는 튜토리얼 시청보다 실제 시스템 구축에 초점을 둔 무료 7주 AI 교육과정을 소개한다. Docker와 FastAPI부터 검색·RAG·모니터링·LangGraph 에이전트까지 운영형 프로젝트에 필요한 주제를 다룬다고 설명한다.</p>
 <ul class="points"><li>Docker, FastAPI, 데이터베이스 및 자동화 데이터 파이프라인 학습</li><li>BM25·하이브리드 검색과 전체 RAG 시스템 구축</li><li>캐싱·모니터링 및 LangGraph 기반 에이전트 개발 포함</li><li>작성자는 10월 7일 무료 AI·데이터과학 워크숍에 500석이 제공된다고 안내</li></ul>
@@ -49,6 +97,22 @@
 <div class="meta">북마크 감지 2026.10.02 08:33 KST · 게시 2026.10.01 20:15 KST</div>
 <a class="open" href="https://x.com/RoundtableSpace/status/2105617472183259306" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
 <details><summary>원문 텍스트 보기</summary><p class="original">someone built a free AI university on GitHub focused on shipping real systems, not just watching tutorials.<br><br>7 weeks:<br><br>• Docker, FastAPI + databases  <br>• automated data pipelines  <br>• BM25 search  <br>• hybrid search  <br>• full RAG systems  <br>• caching + monitoring  <br>• agentic AI with LangGraph  <br><br>you don’t just learn AI. you build production-style projects.<br><br>GitHub:<br><br>`https://t.co/NMo8w4KAsk`<br><br>there’s also a free AI + Data Science workshop on October 7 with 500 seats:<br><br>`https://t.co/jn9xqMAfjf`</p></details>
+</article><article class="card">
+<div class="card-head"><div><div class="author">liam.</div><div class="handle">@liambraus</div></div><span class="tag">· 기타</span></div>
+<p class="summary">작성자는 Microsoft 제품을 무료로 활성화한다는 비공식 GitHub 저장소 ‘Microsoft Activation Scripts’를 소개한다. 별도 라이선스 없이 Windows나 Office를 활성화하는 행위는 이용약관 위반이나 소프트웨어 불법 사용에 해당할 수 있으므로 정식 라이선스 사용이 필요하다.</p>
+<ul class="points"><li>작성자는 Windows 7·8·10·11 활성화를 지원한다고 주장</li><li>저장소의 GitHub 스타가 17만 8천 개 이상이라고 주장</li><li>Microsoft 소유의 GitHub에서 계속 공개 중이라는 점을 강조</li><li>비공식 활성화 도구는 법적·보안상 위험이 있을 수 있음</li></ul>
+<div class="media-grid media-count-1"><figure class="media-item media-photo"><img loading="lazy" decoding="async" src="https://pbs.twimg.com/media/HTjF2ShXgAABL23.jpg" alt="X 게시물 이미지"></figure></div>
+<div class="meta">북마크 감지 2026.10.02 08:33 KST · 게시 2026.10.01 22:26 KST</div>
+<a class="open" href="https://x.com/liambraus/status/2105650623974621300" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
+<details><summary>원문 텍스트 보기</summary><p class="original">ESTO ES JODIDAMENTE INCREÍBLE<br><br>hay un repo de GitHub que activa Windows gratis.<br><br>tiene más de 178.000 estrellas.<br><br>se llama Microsoft Activation Scripts.<br><br>activa Windows 7, 8, 10 y 11.<br><br>mientras Microsoft cobra:<br><br>→ Windows 11 Pro: 199,99$<br>→ Windows 11 Home: 139$<br>→ Office Home &amp; Business 2024: 249,99$<br>→ Microsoft 365 Family: 129,99$/año<br>→ Microsoft 365 Personal: 99,99$/año<br><br>ese repo cuesta: 0$.<br><br>la parte más absurda:<br><br>está alojado en GitHub.<br><br>GitHub pertenece a Microsoft.<br><br>activa productos de Microsoft.<br><br>y sigue online.<br><br>os dejo el repo abajo.</p></details>
+</article><article class="card">
+<div class="card-head"><div><div class="author">Oskar</div><div class="handle">@o_kwasniewski</div></div><span class="tag">⌘ 개발/코딩</span></div>
+<p class="summary">작성자는 웹·모바일 등 다양한 앱을 위한 오픈소스 E2E 테스트 프레임워크를 소개한다. 결정론적 API와 에이전트 기반 API를 함께 사용하고, 자체 에이전트·인프라를 연결해 로컬이나 CI에서 실행할 수 있다고 설명한다.</p>
+<ul class="points"><li>npx e2e init 명령으로 초기화</li><li>결정론적 테스트와 에이전트 기반 테스트의 혼합 지원</li><li>웹·모바일 등 여러 플랫폼을 대상으로 설계</li><li>로컬 및 CI 실행과 자체 인프라 연동 지원</li></ul>
+<div class="media-grid media-count-1"><figure class="media-item media-photo"><img loading="lazy" decoding="async" src="https://pbs.twimg.com/media/HTjbJPEWQAEBJmV.jpg" alt="X 게시물 이미지"></figure></div>
+<div class="meta">북마크 감지 2026.10.02 08:33 KST · 게시 2026.10.02 00:04 KST</div>
+<a class="open" href="https://x.com/o_kwasniewski/status/2105675143464763540" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
+<details><summary>원문 텍스트 보기</summary><p class="original">Introducing e2e<br><br>The agentic testing framework for any app<br><br>~/ npx e2e init<br><br>→ Fully Open Source<br>→ Mix deterministic and agentic APIs<br>→ Supports web, mobile, and more<br>→ Bring your own agent and infrastructure<br>→ Run locally or in CI<br><br>https://t.co/G3XB2L8tiC https://t.co/gUZ3AII2fY</p></details>
 </article><article class="card">
 <div class="card-head"><div><div class="author">Victor M</div><div class="handle">@victormustar</div></div><span class="tag">◈ AI/에이전트</span></div>
 <p class="summary">작성자는 Cloudflare가 Jev의 대안으로 사용할 수 있는 모델을 Hugging Face에 공개했다고 알린다. 해당 모델이 Apache 2.0 라이선스로 제공된다고 주장하지만, 게시물에는 기능이나 성능을 판단할 구체적인 정보가 없다.</p>
@@ -58,11 +122,11 @@
 <a class="open" href="https://x.com/victormustar/status/2105709234151211267" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
 <details><summary>원문 텍스트 보기</summary><p class="original">Alert: Cloudflare just dropped a Jev alternative on Hugging Face 🚨 (Apache 2.0)<br><br>https://t.co/vEcHLoQZA9</p></details>
 </article><article class="card">
-<div class="card-head"><div><div class="author">GitHub AI Projects Community 🇯🇵</div><div class="handle">@trendtech33566</div></div><span class="tag">✦ 디자인/콘텐츠</span></div>
-<p class="summary">작성자는 AI와 화면이나 시스템 사양을 논의할 때 텍스트 대신 시각 자료와 작동 가능한 결과물을 만드는 ‘effective-html’을 소개한다. 와이어프레임, 인터랙티브 프로토타입, 계획도와 시스템 구성도를 독립 실행형 HTML로 만들어 의도를 더 명확히 전달할 수 있다고 설명한다.</p>
-<ul class="points"><li>AI로 시각 자료와 동작하는 시제품을 만드는 6개 스킬 제공</li><li>화면 구성을 와이어프레임으로 표현</li><li>계획과 시스템 아키텍처를 다이어그램으로 시각화</li><li>작성자는 약 3,500개의 GitHub 스타를 받았다고 주장</li></ul>
+<div class="card-head"><div><div class="author">りも(Limo)</div><div class="handle">@vibe_walking</div></div><span class="tag">◈ AI/에이전트</span></div>
+<p class="summary">작성자는 Cloudflare가 Hugging Face에 공개한 270억 매개변수 멀티모달 의사결정 모델 Clef를 Jev의 대안으로 소개한다. Clef는 상태와 선택지가 정해진 질문을 받아 각 선택지의 확률을 반환하므로 자유 형식 출력을 별도로 파싱할 필요가 없다고 설명한다.</p>
+<ul class="points"><li>텍스트·JSON·이미지·동영상 형태의 상태 입력 지원</li><li>여러 질문의 허용된 선택지별 확률을 한 번의 순전파로 반환</li><li>자유 형식 문장을 생성하지 않는 구조</li><li>작성자는 Jev 및 SystemOne API와 완전히 호환된다고 주장</li></ul>
 
-<div class="meta">북마크 감지 2026.10.02 08:33 KST · 게시 2026.10.01 19:00 KST</div>
-<a class="open" href="https://x.com/trendtech33566/status/2105598675141754916" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
-<details><summary>원문 텍스트 보기</summary><p class="original">AIへの指示、「文章だけ」だと伝わりにくい人へ👀<br><br>effective-html、⭐️約3.5千。AIで図や動く試作品を作る6つのskills。<br><br>何ができるかというと👇<br>・画面構成をワイヤーフレームで可視化<br>・実際に触れるプロトタイプを作成<br>・計画やシステム構成も図にできる<br>・単体で開けるHTMLにまとめる<br><br>「こう作ってほしい」を、見せて伝える。<br>AIと画面設計や仕様を詰めたい人に刺さります。<br><br>https://t.co/PwDJ3t0JmW</p></details>
-</article></section></main><footer class="footer"><div class="wrap">자동 수집·요약 · 마지막 생성 2026.10.02 08:33 KST</div></footer></body></html>
+<div class="meta">북마크 감지 2026.10.02 08:33 KST · 게시 2026.10.02 04:15 KST</div>
+<a class="open" href="https://x.com/vibe_walking/status/2105738417237803418" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
+<details><summary>원문 텍스트 보기</summary><p class="original">CloudflareがJevの代替をHugging Faceにアップロードしてる！！<br>オープンソースだから好きなだけ使える！<br><br>https://t.co/P6fKf5q9lF<br><br>Clefは、状態（state）と「型付きの質問（typed questions）」のスキーマを入力として受け取り、意思決定を行う27B（270億パラメータ）のマルチモーダルモデルです。<br><br>状態は、テキスト、JSON、画像、動画として読み取ることができます。そして、各質問について「許可されているすべての選択肢」の確率を、1回のフォワードパスでまとめて返します。<br><br>自由形式の文章生成は行わず、出力を後からパース（解析・変換）する必要もありません。<br><br>Clef APIは、JevおよびSystemOneと完全な互換性があります。</p></details>
+</article></section></main><footer class="footer"><div class="wrap">자동 수집·요약 · 마지막 생성 2026.10.02 08:44 KST</div></footer></body></html>
