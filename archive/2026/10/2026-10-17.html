@@ -1,7 +1,15 @@
 <!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>2026-10-17 · X Bookmark Archive</title><meta name="description" content="2026-10-17 X 북마크 한국어 요약"><link rel="stylesheet" href="../../../assets/style.css"></head>
-<body><main class="wrap"><header class="hero"><a class="back" href="../../../index.html">← 전체 아카이브</a><div class="eyebrow">Daily archive</div><h1>2026-10-17</h1><p class="lede">이날 새로 감지된 X 북마크 1건을 한국어로 정리했습니다.</p></header><section class="cards"><article class="card">
+<body><main class="wrap"><header class="hero"><a class="back" href="../../../index.html">← 전체 아카이브</a><div class="eyebrow">Daily archive</div><h1>2026-10-17</h1><p class="lede">이날 새로 감지된 X 북마크 2건을 한국어로 정리했습니다.</p></header><section class="cards"><article class="card">
+<div class="card-head"><div><div class="author">Forha</div><div class="handle">@Forhanvv</div></div><span class="tag">◈ AI/에이전트</span></div>
+<p class="summary">작성자는 ComfyUI용 Ref2VA-VSA 노드가 희소 어텐션 DiT를 활용해 MiniMax H3 캐릭터 영상 생성 속도와 메모리 효율을 크게 개선한다고 주장한다. 제시된 수치가 재현된다면 16GB GPU에서도 짧은 캐릭터 영상을 비교적 빠르게 생성하는 워크플로우에 활용할 수 있지만, 성능과 캐릭터 일관성은 독립적인 검증이 필요하다.</p>
+<ul class="points"><li>작성자는 RTX 4090에서 5.16초·124프레임·1344×768 영상을 약 72초 만에 생성해 기본 H3 대비 약 9배 빨라졌다고 주장한다.</li><li>최대 VRAM 사용량을 약 22.5GB에서 13.5GB로 줄여 16GB GPU에서도 실행할 수 있다고 설명한다.</li><li>Euler/simple 샘플러의 4단계 샘플링과 75% 영상 희소성을 사용한다고 소개한다.</li><li>참조 토큰을 어텐션 프루닝에서 제외해 얼굴 변화 없이 캐릭터 정체성을 유지한다고 주장하며, 구현은 GitHub에 오픈소스로 공개됐다고 안내한다.</li></ul>
+<div class="media-grid media-count-1"><figure class="media-item"><video class="media-player media-video" controls preload="metadata" playsinline poster="https://pbs.twimg.com/amplify_video_thumb/2111192825685737472/img/ZZQXsTiF9enzXd6n.jpg"><source src="https://video.twimg.com/amplify_video/2111192825685737472/vid/avc1/1260x1080/vH2AcdIwGIh2qkD4.mp4" type="video/mp4">이 브라우저에서는 영상을 재생할 수 없습니다.</video></figure></div>
+<div class="meta">북마크 감지 2026.10.17 23:18 KST · 게시 2026.10.17 05:29 KST</div>
+<a class="open" href="https://x.com/Forhanvv/status/2111192898171818232" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
+<details><summary>원문 텍스트 보기</summary><p class="original">From 𝟭𝟭 𝗺𝗶𝗻𝘂𝘁𝗲𝘀 down to 𝟳𝟮 𝘀𝗲𝗰𝗼𝗻𝗱𝘀.<br><br>A new ComfyUI node just cracked real-time speed for 𝗠𝗶𝗻𝗶𝗠𝗮𝘅 𝗛𝟯 character video generation.<br><br>𝗖𝗼𝗺𝗳𝘆𝗨𝗜-𝗥𝗲𝗳𝟮𝗩𝗔-𝗩𝗦𝗔 achieves a massive 𝟵𝘅 𝘀𝗽𝗲𝗲𝗱𝘂𝗽 using sparse attention DiT:<br><br>• 𝟳𝟮𝘀 𝘄𝗮𝗹𝗹 𝘁𝗶𝗺𝗲: Full 5.16s video @ 24fps (124 frames, 1344×768)<br>• 𝟭𝟯.𝟱 𝗚𝗕 𝗣𝗲𝗮𝗸 𝗩𝗥𝗔𝗠: Down from ~22.5 GB (runs on 16GB GPUs)<br>• 𝟰-𝗦𝘁𝗲𝗽 𝗦𝗮𝗺𝗽𝗹𝗶𝗻𝗴: Euler/simple sampler with 75% video sparsity<br>• 𝗭𝗲𝗿𝗼 𝗙𝗮𝗰𝗲 𝗗𝗿𝗶𝗳𝘁: Reference tokens stay locked out of attention pruning to maintain 100% character identity<br>Benchmark comparison on RTX 4090: → Native Dense H3: ~650s (~11 min)<br>→ Video Delta Net (VDN): ~135s<br>→ Ref2VA VSA: ~72s<br><br>Open-source on GitHub:<br>https://t.co/K5vcI6CeVh</p></details>
+</article><article class="card">
 <div class="card-head"><div><div class="author">Tom Dörr</div><div class="handle">@tom_doerr</div></div><span class="tag">⚙ 도구/워크플로우</span></div>
 <p class="summary">작성자는 Stealth Browser MCP로 실제 Chrome 브라우저 인스턴스를 자동화해 Cloudflare 챌린지와 봇 검사를 우회할 수 있다고 주장한다. 웹 자동화 과정에서 탐지 회피를 시도하는 도구를 소개하는 내용이지만, 효과와 적법성은 별도로 검증해야 한다.</p>
 <ul class="points"><li>실제 Chrome 인스턴스를 자동화하는 Stealth Browser MCP를 소개한다.</li><li>Cloudflare 챌린지와 봇 검사를 우회할 수 있다는 작성자의 주장이다.</li><li>사용 대상 서비스의 약관과 관련 법규를 확인할 필요가 있다.</li></ul>
@@ -9,4 +17,4 @@
 <div class="meta">북마크 감지 2026.10.17 23:07 KST · 게시 2026.10.17 12:00 KST</div>
 <a class="open" href="https://x.com/tom_doerr/status/2111291280802095294" target="_blank" rel="noopener noreferrer">X에서 원문 열기 ↗</a>
 <details><summary>원문 텍스트 보기</summary><p class="original">Bypass Cloudflare challenges and bot checks by automating real Chrome browser instances with Stealth Browser MCP.<br><br>https://t.co/ZPG1h1NlDc https://t.co/UdZseFWAY8</p></details>
-</article></section></main><footer class="footer"><div class="wrap">자동 수집·요약 · 마지막 생성 2026.10.17 23:07 KST</div></footer></body></html>
+</article></section></main><footer class="footer"><div class="wrap">자동 수집·요약 · 마지막 생성 2026.10.17 23:18 KST</div></footer></body></html>
